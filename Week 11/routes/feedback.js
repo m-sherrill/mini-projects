@@ -10,7 +10,7 @@ fb.get('/', (req, res) =>
 // POST Route for submitting feedback
 fb.post('/', (req, res) => {
   // Destructuring assignment for the items in req.body
-  const { email, feedbackType, feedback } = req.body;
+  const { time, tip, topic, username } = req.body;
 
   // If all the required properties are present
   if (email && feedbackType && feedback) {
